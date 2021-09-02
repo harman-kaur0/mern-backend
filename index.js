@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 app.use(cors());
 app.use(express.json());
 
-app.use('/user', userRoutes);
+app.use('/users', userRoutes);
 
 const URI = process.env.ATLAS_URI;
 const PORT = process.env.PORT || 5000;
